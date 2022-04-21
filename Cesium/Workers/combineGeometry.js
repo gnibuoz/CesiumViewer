@@ -1,18 +1,1 @@
-/* This file is automatically rebuilt by the Cesium build process. */
-define(['./PrimitivePipeline-d0a28f39', './createTaskProcessorWorker', './Transforms-c9f24aab', './Matrix2-feb45b00', './RuntimeError-c581ca93', './defaultValue-94c3e563', './ComponentDatatype-b1ea011a', './WebGLConstants-7dccdc96', './_commonjsHelpers-3aae1032-f55dc0c4', './combine-761d9c3f', './GeometryAttribute-a247c9b5', './GeometryAttributes-7df9bef6', './GeometryPipeline-8bdf78c5', './AttributeCompression-b89638a2', './EncodedCartesian3-7fbeca3f', './IndexDatatype-c4099fe9', './IntersectionTests-cddae83a', './Plane-d4dd64b5', './WebMercatorProjection-dd5549ea'], (function (PrimitivePipeline, createTaskProcessorWorker, Transforms, Matrix2, RuntimeError, defaultValue, ComponentDatatype, WebGLConstants, _commonjsHelpers3aae1032, combine, GeometryAttribute, GeometryAttributes, GeometryPipeline, AttributeCompression, EncodedCartesian3, IndexDatatype, IntersectionTests, Plane, WebMercatorProjection) { 'use strict';
-
-  function combineGeometry(packedParameters, transferableObjects) {
-    const parameters = PrimitivePipeline.PrimitivePipeline.unpackCombineGeometryParameters(
-      packedParameters
-    );
-    const results = PrimitivePipeline.PrimitivePipeline.combineGeometry(parameters);
-    return PrimitivePipeline.PrimitivePipeline.packCombineGeometryResults(
-      results,
-      transferableObjects
-    );
-  }
-  var combineGeometry$1 = createTaskProcessorWorker(combineGeometry);
-
-  return combineGeometry$1;
-
-}));
+define(["./PrimitivePipeline-d3c76b88","./createTaskProcessorWorker","./Transforms-adcb8b68","./Matrix2-37e55508","./RuntimeError-8952249c","./defaultValue-81eec7ed","./ComponentDatatype-a15c9a19","./WebGLConstants-508b9636","./_commonjsHelpers-3aae1032-26891ab7","./combine-3c023bda","./GeometryAttribute-6586dca9","./GeometryAttributes-32b29525","./GeometryPipeline-db257970","./AttributeCompression-27507afe","./EncodedCartesian3-96fdc0ef","./IndexDatatype-f1dcdf35","./IntersectionTests-77f7e37a","./Plane-6ee42cab","./WebMercatorProjection-2839e524"],(function(e,t,i,r,n,a,o,c,s,m,b,d,u,P,p,f,l,y,G){"use strict";return t((function(t,i){const r=e.PrimitivePipeline.unpackCombineGeometryParameters(t),n=e.PrimitivePipeline.combineGeometry(r);return e.PrimitivePipeline.packCombineGeometryResults(n,i)}))}));

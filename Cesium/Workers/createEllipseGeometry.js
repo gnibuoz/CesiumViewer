@@ -1,15 +1,1 @@
-/* This file is automatically rebuilt by the Cesium build process. */
-define(['./Matrix2-feb45b00', './defaultValue-94c3e563', './EllipseGeometry-9999d21f', './RuntimeError-c581ca93', './ComponentDatatype-b1ea011a', './WebGLConstants-7dccdc96', './GeometryOffsetAttribute-3e8c299c', './Transforms-c9f24aab', './_commonjsHelpers-3aae1032-f55dc0c4', './combine-761d9c3f', './EllipseGeometryLibrary-3d58ec34', './GeometryAttribute-a247c9b5', './GeometryAttributes-7df9bef6', './GeometryInstance-226aaa98', './GeometryPipeline-8bdf78c5', './AttributeCompression-b89638a2', './EncodedCartesian3-7fbeca3f', './IndexDatatype-c4099fe9', './IntersectionTests-cddae83a', './Plane-d4dd64b5', './VertexFormat-e46f29d6'], (function (Matrix2, defaultValue, EllipseGeometry, RuntimeError, ComponentDatatype, WebGLConstants, GeometryOffsetAttribute, Transforms, _commonjsHelpers3aae1032, combine, EllipseGeometryLibrary, GeometryAttribute, GeometryAttributes, GeometryInstance, GeometryPipeline, AttributeCompression, EncodedCartesian3, IndexDatatype, IntersectionTests, Plane, VertexFormat) { 'use strict';
-
-  function createEllipseGeometry(ellipseGeometry, offset) {
-    if (defaultValue.defined(offset)) {
-      ellipseGeometry = EllipseGeometry.EllipseGeometry.unpack(ellipseGeometry, offset);
-    }
-    ellipseGeometry._center = Matrix2.Cartesian3.clone(ellipseGeometry._center);
-    ellipseGeometry._ellipsoid = Matrix2.Ellipsoid.clone(ellipseGeometry._ellipsoid);
-    return EllipseGeometry.EllipseGeometry.createGeometry(ellipseGeometry);
-  }
-
-  return createEllipseGeometry;
-
-}));
+define(["./Matrix2-37e55508","./defaultValue-81eec7ed","./EllipseGeometry-f575ade8","./RuntimeError-8952249c","./ComponentDatatype-a15c9a19","./WebGLConstants-508b9636","./GeometryOffsetAttribute-8c5e10db","./Transforms-adcb8b68","./_commonjsHelpers-3aae1032-26891ab7","./combine-3c023bda","./EllipseGeometryLibrary-7ac36a66","./GeometryAttribute-6586dca9","./GeometryAttributes-32b29525","./GeometryInstance-13e4ff38","./GeometryPipeline-db257970","./AttributeCompression-27507afe","./EncodedCartesian3-96fdc0ef","./IndexDatatype-f1dcdf35","./IntersectionTests-77f7e37a","./Plane-6ee42cab","./VertexFormat-a0b706b0"],(function(e,t,r,a,n,o,i,c,s,l,d,b,m,f,p,u,y,G,E,C,_){"use strict";return function(a,n){return t.defined(n)&&(a=r.EllipseGeometry.unpack(a,n)),a._center=e.Cartesian3.clone(a._center),a._ellipsoid=e.Ellipsoid.clone(a._ellipsoid),r.EllipseGeometry.createGeometry(a)}}));
