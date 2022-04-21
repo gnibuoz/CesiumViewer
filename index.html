@@ -18,6 +18,8 @@
 <body style="background: #000">
   <div id="cesiumContainer" class="fullWindow"></div>
   <script>
+window.CESIUM_BASE_URL = "./Cesium/";
+
     viewer = new Cesium.Viewer("cesiumContainer", {
       scene3DOnly: false,
       requestRenderMode: true,
