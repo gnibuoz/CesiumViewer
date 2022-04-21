@@ -20,7 +20,7 @@ import {
   ScreenSpaceEventHandler,
   ScreenSpaceEventType,
   LabelCollection,
-  HorizontalOrigin, VerticalOrigin, Cartesian2, Cartographic
+  HorizontalOrigin, VerticalOrigin, Cartesian2, Cartographic,EllipsoidTerrainProvider
 } from "./Cesium/Cesium.js";
 
 function main() {
@@ -73,15 +73,10 @@ function main() {
     // 去除logo
     viewer.cesiumWidget.creditContainer.style.display = "none";
 
-    if (hasBaseLayerPicker) {
-      const viewModel = viewer.baseLayerPicker.viewModel;
-      viewModel.selectedTerrain = viewModel.terrainProviderViewModels[1];
-    } else {
-      viewer.terrainProvider = createWorldTerrain({
-        requestWaterMask: true,
-        requestVertexNormals: true,
-      });
-    }
+    viewer.terrainProvider = new EllipsoidTerrainProvider({});
+    viewer.scene.globe.depthTestAgainstTerrain = false;//是否检查深度
+
+
   } catch (exception) {
     loadingIndicator.style.display = "none";
     const message = formatError(exception);
