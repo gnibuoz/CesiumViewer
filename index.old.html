@@ -13,14 +13,16 @@
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
   <link rel="stylesheet" href="CesiumViewer.css" media="screen" />
   <script>
-    window.CESIUM_BASE_URL = "https://mars3d.cn/lib/Cesium/";
+    window.CESIUM_BASE_URL = "./Cesium/";
   </script>
-  <script src="https://mars3d.cn/lib/Cesium/Cesium.js"></script>
+  <script src="./Cesium/Cesium.js"></script>
 </head>
 
 <body style="background: #000">
   <div id="cesiumContainer" class="fullWindow"></div>
   <script>
+    window.CESIUM_BASE_URL = "./Cesium/";
+    var CESIUM_BASE_URL = "./Cesium/";
 
     viewer = new Cesium.Viewer("cesiumContainer", {
       scene3DOnly: false,
